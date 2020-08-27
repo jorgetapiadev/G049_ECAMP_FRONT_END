@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Jorge Tapia desafio latam</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+
+    <!-- Mis estilos css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Buscar pokemon-->
+
+    <div class="uk-child-width-1-2@s uk-grid-match uk-padding-large " uk-grid>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Busca tu Pokemon</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="pokemon1" type="text">
+                       
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-select"></label>
+                    <div class="uk-form-controls">
+                        <button class="uk-button uk-button-default" onclick="consultarPokemon()"><span uk-icon="search">Buscar </span></button>
+                    </div>
+                </div>
+
+        </div>
+        <div class="uk-background-contain  uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle"
+            style="background-image: url(./assets/img/pokemon.jpg);">
+        </div>
+    </div>
+    <!-- Pokemon resultado-->
+    <div id="datos-pokemon"  class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-6@s " uk-grid>
+        <div class="uk-card-body">
+            <h3 id="nombre-pokemon"></h3>
+            <p>Imagenes</p>
+        </div>
+    <img id="imagen-pokemon-1" src="" alt="imagen pokemon 1" onerror="this.onerror=null; this.src='./assets/img/pokeball.png'" >
+    <img id="imagen-pokemon-2" src="" alt="imagen pokemon 2" onerror="this.onerror=null; this.src='./assets/img/pokeball.png'">
+    <img id="imagen-pokemon-3" src="" alt="imagen pokemon 3" onerror="this.onerror=null; this.src='./assets/img/pokeball.png'">
+    <img id="imagen-pokemon-4" src="" alt="imagen pokemon 4" onerror="this.onerror=null; this.src='./assets/img/pokeball.png'">
+    <img id="imagen-pokemon-5" src="" alt="imagen pokemon 5" onerror="this.onerror=null; this.src='./assets/img/pokeball.png'">
+    </div>
+
+
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <!-- JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+
+
+    <!-- Canvas JS 1.7.0-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js"></script>
+    <!-- Mis scripts-->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
